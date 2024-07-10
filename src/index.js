@@ -1,6 +1,7 @@
 // Create page Content
 const contentDiv = document.querySelector("#content")
 
+//TODO: Move into Home Module
 //Heading and picture
 const section = document.createElement("div");
 section.classList.add("section");
