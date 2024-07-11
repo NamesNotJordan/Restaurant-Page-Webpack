@@ -12,7 +12,7 @@ const hero = () => {
     return container;
 }
 
-const createHomeContent = () => {
+export default function createHomeContent() {
     const contentDiv = document.querySelector("#content");
     contentDiv.appendChild(hero);
     
@@ -25,5 +25,3 @@ const createHomeContent = () => {
     contentDiv.appendChild(tagline);
     contentDiv.appendChild(para);
 }
-
-export default createHomeContent;

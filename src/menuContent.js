@@ -18,7 +18,7 @@ const menuList = [
     menuItem("Milkshake", 25.00)
 ] 
 
-function createMenuContent() {
+export default function createMenuContent() {
     const contentDiv = document.querySelector("#content");
     const heading = document.createElement("h1");
     heading.innerHTML = "Made (up) just for you";
@@ -28,5 +28,3 @@ function createMenuContent() {
         contentDiv.appendChild(item);
     }
 }
-
-export default createMenuContent;
