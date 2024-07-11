@@ -28,3 +28,5 @@ function createMenuContent() {
         contentDiv.appendChild(item);
     }
 }
+
+export default createMenuContent;
