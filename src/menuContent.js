@@ -20,5 +20,11 @@ const menuList = [
 
 function createMenuContent() {
     const contentDiv = document.querySelector("#content");
-        
+    const heading = document.createElement("h1");
+    heading.innerHTML = "Made (up) just for you";
+    contentDiv.appendChild(heading);
+    
+    for (const item of menuList) {
+        contentDiv.appendChild(item);
+    }
 }
