@@ -14,7 +14,6 @@ const hero = () => {
 
 export default function createHomeContent() {
     const contentDiv = document.querySelector("#content");
-    contentDiv.appendChild(hero);
     
     const tagline = document.createElement("h2");
     tagline.classList.add("tagline");
@@ -22,6 +21,5 @@ export default function createHomeContent() {
     const para = document.createElement("p");
     para.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci recusandae fuga quos ullam vel.";
 
-    contentDiv.appendChild(tagline);
-    contentDiv.appendChild(para);
+    contentDiv.replaceChildren(hero, tagline, para)
 }

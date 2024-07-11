@@ -20,6 +20,8 @@ const menuList = [
 
 export default function createMenuContent() {
     const contentDiv = document.querySelector("#content");
+    // empty content
+    contentDiv.replaceChildren();
     const heading = document.createElement("h1");
     heading.innerHTML = "Made (up) just for you";
     contentDiv.appendChild(heading);

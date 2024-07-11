@@ -7,7 +7,5 @@ export default function createAboutContent(){
     const paragraph2 = document.createElement("p");
     paragraph2.innerHTML = "Ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam"
     
-    contentDiv.appendChild(heading);
-    contentDiv.appendChild(paragraph1);
-    contentDiv.appendChild(paragraph2);
+    contentDiv.replaceChildren(heading, paragraph1, paragraph2);
 }

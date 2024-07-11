@@ -11,3 +11,6 @@ const aboutButton = document.querySelector(".about-button");
 homeButton.addEventListener("click", createHomeContent);
 menuButton.addEventListener("click", createMenuContent);
 aboutButton.addEventListener("click", createAboutContent);
+
+//Load Home Content by default
+createHomeContent
