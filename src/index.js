@@ -1,6 +1,7 @@
 import createHomeContent from "./homeContent";
 import createMenuContent from "./menuContent";
 import createAboutContent from "./aboutContent";
+import './style.css';
 
 // Get nav buttons
 const homeButton = document.querySelector(".home-button");
