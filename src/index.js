@@ -14,4 +14,4 @@ menuButton.addEventListener("click", createMenuContent);
 aboutButton.addEventListener("click", createAboutContent);
 
 //Load Home Content by default
-createHomeContent
+createHomeContent();
