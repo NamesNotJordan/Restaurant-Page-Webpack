@@ -1,20 +1,13 @@
-const hero = () => {
-    const container = document.createElement("div");
-    container.classList.add("hero");
-    
-    //const image = document.createElement("img");
-    const heading = document.createElement("h1");
-    heading.innerHTML = "Made Up Meals";
-    
-    container.style.backgroundImage = "url('https://www.shutterstock.com/image-photo/portrait-waiter-serving-food-customers-260nw-1392204773.jpg')";
-    container.appendChild(heading);
-
-    return container;
-}
 
 export default function createHomeContent() {
     const contentDiv = document.querySelector("#content");
     
+    const hero = document.createElement("div");
+    hero.classList.add("hero");
+    const heading = document.createElement("h1");
+    heading.innerHTML = "Made Up Meals";
+    hero.appendChild(heading);
+
     const tagline = document.createElement("h2");
     tagline.classList.add("tagline");
     tagline.innerHTML = "Lorem ipsum dolor sit amet";

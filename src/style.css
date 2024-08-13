@@ -1,3 +1,16 @@
+body {
+    background-image: url("./corkboard.png");
+}
+#content{
+    background-image: url("./lined-paper.jpg");
+    margin: 3em;
+    padding: 2em;
+}
+.hero {
+    background-image: url("./Stock-Restaurant.jpg");
+    background-size: cover;
+    height: 30rem;
+}
 .menu-item {
     display: flex; 
 }
