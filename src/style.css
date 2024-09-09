@@ -1,6 +1,9 @@
 :root{
-    --snor-dark-blue: #07758c;
-    --snor-yellow: 
+    --snor-dark-blue: #29738e;
+    --snor-blue:#5f96aa; 
+    --snor-beige:#f1e5d7;
+    --snor-brown:#cec1b8;
+    --snor-dark-brown:#7f6f62;
 }
 body {
     padding: 0%;
@@ -8,7 +11,6 @@ body {
 }
 header{
     background-color: black;
-    color: deepskyblue;
 }
 nav{
     height: 3.2rem;
@@ -24,7 +26,7 @@ nav button{
     font-size: 1.2rem;
 }
 nav button:hover{
-    background-color: white;
+    background-color: var(--snor-beige);
     color: black;
 }
 
@@ -32,30 +34,30 @@ nav button:hover{
     display: grid;
     place-items: center;
     height: 30rem;
-    background-color: #07758c;
-    color: #f9c979;
+    background-color: var(--snor-dark-blue);
+    color: var(--snor-beige);
     font-size: 4rem;
 }
 .home-section-2{
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 5rem auto;
-    height: 20rem;
+    height: 25rem;
     padding: 50px;
-    background-color: #f9c979;
-    color: white;
+    background-color: var(--snor-beige);
+    color: var(--snor-dark-blue);
 }
 .home-section-2 h2{
     font-size: 3rem;
 }
 .home-section-2 p {
-    
+    font-size: 2rem;
 }
 .fake-pic{
     grid-area: 1 / 2 / span 2;
     width: 90%;
     height: 15rem;
-    background-color: ghostwhite;
+    background-color: var(--snor-dark-blue);
 }
 .menu-item {
     display: flex; 

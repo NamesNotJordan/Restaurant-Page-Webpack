@@ -20,13 +20,16 @@ const menuList = [
 
 export default function createMenuContent() {
     const contentDiv = document.querySelector("#content");
-    // empty content
-    contentDiv.replaceChildren();
+
     const heading = document.createElement("h1");
     heading.innerHTML = "Made (up) just for you";
-    contentDiv.appendChild(heading);
+    
+    const menuDiv = document.createElement("div");
+    menuDiv.classList.add("menu-div");
     
     for (const item of menuList) {
-        contentDiv.appendChild(item);
+        menuDiv.appendChild(item);
     }
+
+    contentDiv.replaceChildren(heading, menuDiv);
 }
