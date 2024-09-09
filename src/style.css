@@ -1,17 +1,61 @@
-
-
+:root{
+    --snor-dark-blue: #07758c;
+    --snor-yellow: 
+}
 body {
-    background-image: url("./corkboard.png");
+    padding: 0%;
+    margin: 0%;
 }
-#content{
-    background-image: url("./lined-paper.jpg");
-    margin: 3em;
-    padding: 2em;
+header{
+    background-color: black;
+    color: deepskyblue;
 }
+nav{
+    height: 3.2rem;
+    display: flex;
+    justify-content: center;
+}
+nav button{
+    width: 10rem;
+    background: none;
+    border-radius: 0%;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+}
+nav button:hover{
+    background-color: white;
+    color: black;
+}
+
 .hero {
-    background-image: url("./Stock-Restaurant.jpg");
-    background-size: cover;
+    display: grid;
+    place-items: center;
     height: 30rem;
+    background-color: #07758c;
+    color: #f9c979;
+    font-size: 4rem;
+}
+.home-section-2{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 5rem auto;
+    height: 20rem;
+    padding: 50px;
+    background-color: #f9c979;
+    color: white;
+}
+.home-section-2 h2{
+    font-size: 3rem;
+}
+.home-section-2 p {
+    
+}
+.fake-pic{
+    grid-area: 1 / 2 / span 2;
+    width: 90%;
+    height: 15rem;
+    background-color: ghostwhite;
 }
 .menu-item {
     display: flex; 
