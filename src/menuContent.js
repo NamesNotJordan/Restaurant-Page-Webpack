@@ -1,12 +1,18 @@
-// Constructs takes in a menu item name and price and creates an HTML element
+// a formatter for converting an integer into South African Rand
+const currFormatter = new Intl.NumberFormat('en-ZA', {
+    style: 'currency',
+    currency: 'ZAR',
+    minimumFractionDigits: 2
+})
 
+// Constructs takes in a menu item name and price(in cents) and creates an HTML element
 const menuItem = (name, price) => {
     const element = document.createElement("li");
     element.classList.add("menu-item");
     const nameLabel = document.createElement("p");
     const priceLabel = document.createElement("p");
     nameLabel.innerHTML = name;
-    priceLabel.innerHTML = 'R' + price;
+    priceLabel.innerHTML = currFormatter.format(price);
     element.appendChild(nameLabel);
     element.appendChild(priceLabel);
 
@@ -14,11 +20,14 @@ const menuItem = (name, price) => {
 }
 
 const foodList = [
-    menuItem("Hotdog", 20.00),
+    menuItem("Hotdog", 30.00),
     menuItem("Burger", 50.00),
+    menuItem("Waffles", 24.99),
+    menuItem("Steak", 115.00)
 ];
 const drinkList = [
-    menuItem("Milkshake", 25.00)
+    menuItem("Milkshake", 25.00),
+    menuItem("750ml Spring Water", 40.00)
 ];
 
 export default function createMenuContent() {
