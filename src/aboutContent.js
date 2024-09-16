@@ -18,5 +18,5 @@ export default function createAboutContent(){
     para4.classList.add("about-p");
     para4.innerHTML="Lorem ipsum odor amet, consectetuer adipiscing elit. Turpis condimentum senectus aptent nisi mattis condimentum nullam tellus. Gravida vestibulum tortor malesuada senectus aptent odio blandit? Parturient conubia finibus eget nostra; inceptos cursus nisi. Rutrum vel semper aliquam natoque sapien finibus gravida eget. Sed tortor suscipit quis sapien luctus orci maecenas. Libero aenean tempor tempus feugiat ligula augue nascetur. Nisl sagittis finibus eget porta ut turpis etiam. Convallis dapibus himenaeos nisl convallis finibus libero.";
 
-    contentDiv.replaceChildren(heading, paragraph1, paragraph2);
+    contentDiv.replaceChildren(heading, paragraph1, paragraph2, para3, para4);
 }
