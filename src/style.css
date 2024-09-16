@@ -100,3 +100,11 @@ h2{
     margin-right: 2em;
     font-size: 2rem;
 }
+.about-h1{
+    margin: 1rem 3rem;
+}
+.about-p {
+    color: var(--snor-beige);
+    margin: 4rem 8rem 2rem;
+    font-size: 1.75rem;
+}
