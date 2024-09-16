@@ -1,8 +1,4 @@
 // Constructs takes in a menu item name and price and creates an HTML element
-const menuCatagory = Object.freeze({
-    FOOD: "food",
-    DRINK: "Drink"
-});
 
 const menuItem = (name, price, catagory) => {
     this.catagory = catagory;
@@ -19,10 +15,10 @@ const menuItem = (name, price, catagory) => {
 }
 
 const menuList = [
-    menuItem("Hotdog", 20.00),
-    menuItem("Burger", 50.00),
-    menuItem("Milkshake", 25.00)
-] 
+    menuItem("Hotdog", 20.00,menuCatagory.FOOD),
+    menuItem("Burger", 50.00, menuCatagory.FOOD),
+    menuItem("Milkshake", 25.00, menuCatagory.DRINK)
+];
 
 export default function createMenuContent() {
     const contentDiv = document.querySelector("#content");
@@ -33,6 +29,12 @@ export default function createMenuContent() {
     const menuDiv = document.createElement("div");
     menuDiv.classList.add("menu-div");
     
+    const foodHeading = document.createElement("h2");
+    foodHeading.innerHTML="FOOD";
+    const drinkHeading = document.createElement("h2");
+    drinkHeading.innerHTML="DRINKS";
+    
+    menuDiv.appendChild(foodHeading);
     for (const item of menuList) {
         menuDiv.appendChild(item);
     }
