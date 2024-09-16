@@ -1,9 +1,15 @@
 // Constructs takes in a menu item name and price and creates an HTML element
-const menuItem = (name, price) => {
+const menuCatagory = Object.freeze({
+    FOOD: "food",
+    DRINK: "Drink"
+});
+
+const menuItem = (name, price, catagory) => {
+    this.catagory = catagory;
     const element = document.createElement("li");
     element.classList.add("menu-item");
     const nameLabel = document.createElement("p");
-    const priceLabel = document.createElement("strong");
+    const priceLabel = document.createElement("p");
     nameLabel.innerHTML = name;
     priceLabel.innerHTML = 'R' + price;
     element.appendChild(nameLabel);
